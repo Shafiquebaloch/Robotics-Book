@@ -12,12 +12,12 @@ const config = {
     v4: true,
   },
 
-  // GitHub Pages setup
-  url: 'https://shafiquebaloch.github.io', // Only domain
-  baseUrl: '/Robotics-Book/',               // Repo name as sub-path
+  // Production URL and base path
+  url: 'https://shafiquebaloch.github.io', // domain only
+  baseUrl: '/Robotics-Book/',               // repo name as sub-path
   organizationName: 'Shafiquebaloch',      // GitHub username
-  projectName: 'Robotics-Book',            // Repository name
-  trailingSlash: false,
+  projectName: 'Robotics-Book',            // Repo name
+  trailingSlash: true,                     // fixes CSS/asset paths on Vercel
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
