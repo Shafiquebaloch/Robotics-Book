@@ -1,12 +1,5 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -14,27 +7,21 @@ const config = {
   tagline: 'A comprehensive guide to building autonomous humanoid robot pipelines',
   favicon: 'img/favicon.ico',
 
-  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  // Enable future v4 features
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true,
   },
 
-  // Set the production url of your site here
-  url: 'https://UMAIR.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/Robotics-Book/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'UMAIR', // Usually your GitHub org/user name.
-  projectName: 'Robotics-Book', // Usually your repo name.
+  // GitHub Pages setup
+  url: 'https://shafiquebaloch.github.io', // Only domain
+  baseUrl: '/Robotics-Book/',               // Repo name as sub-path
+  organizationName: 'Shafiquebaloch',      // GitHub username
+  projectName: 'Robotics-Book',            // Repository name
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -46,14 +33,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/UMAIR/Robotics-Book/tree/main/', // Disabling for now, can be added later if needed
+          sidebarPath: require.resolve('./sidebars.js'),
+          // editUrl can be added later if needed
         },
-          // {to: '/blog', label: 'Blog', position: 'left'}, // Blog might not be relevant for a book, commenting out
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -62,7 +46,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
         respectPrefersColorScheme: true,
@@ -76,13 +59,12 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'bookSidebar', // Changed from tutorialSidebar
+            sidebarId: 'bookSidebar',
             position: 'left',
-            label: 'Book', // Changed from Tutorial
+            label: 'Book',
           },
-          // {to: '/blog', label: 'Blog', position: 'left'}, // Blog might not be relevant for a book, commenting out
           {
-            href: 'https://github.com/UMAIR/Robotics-Book', // Updated GitHub link
+            href: 'https://github.com/Shafiquebaloch/Robotics-Book',
             label: 'GitHub',
             position: 'right',
           },
@@ -95,8 +77,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Book', // Changed from Tutorial
-                to: '/docs/intro', // Linking to the introduction chapter
+                label: 'Book',
+                to: '/docs/intro',
               },
             ],
           },
@@ -105,28 +87,24 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/robotics', // More relevant tag
+                href: 'https://stackoverflow.com/questions/tagged/robotics',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus', // Keeping generic Docusaurus Discord for now
+                href: 'https://discordapp.com/invite/docusaurus',
               },
               {
                 label: 'X',
-                href: 'https://x.com', // Keeping generic X for now
+                href: 'https://x.com',
               },
             ],
           },
           {
             title: 'More',
             items: [
-              // {
-              //   label: 'Blog', // Blog might not be relevant for a book, commenting out
-              //   to: '/blog',
-              // },
               {
                 label: 'GitHub',
-                href: 'https://github.com/UMAIR/Robotics-Book', // Updated GitHub link
+                href: 'https://github.com/Shafiquebaloch/Robotics-Book',
               },
             ],
           },
@@ -139,4 +117,5 @@ const config = {
       },
     }),
 };
+
 export default config;
