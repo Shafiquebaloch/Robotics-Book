@@ -4,32 +4,35 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Humanoid Robotics',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Humanoid robots are designed to move, react, and work like humans. 
+        With AI-driven sensors and motion systems, they can understand their environment 
+        and perform complex tasks intelligently.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Artificial Intelligence Systems',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        AI enables robots to learn, analyze data, and make decisions. 
+        Through neural networks, machine learning, and computer vision, 
+        robots gain the ability to think and adapt in real time.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Future of Automation',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The combination of robotics and AI is revolutionizing industries. 
+        From automated factories to smart healthcare systems, 
+        intelligent automation is shaping the future of technology.
       </>
     ),
   },

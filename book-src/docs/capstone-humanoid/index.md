@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: Capstone: Autonomous Humanoid
+title: 'Capstone: Autonomous Humanoid'
 ---
 
 # Capstone: Autonomous Humanoid

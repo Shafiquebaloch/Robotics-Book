@@ -7,7 +7,7 @@ surface: agent
 model: gemini-1.5-pro
 feature: 001-humanoid-robotics-book
 branch: 001-humanoid-robotics-book
-user: UMAIR
+user: ShafiQue
 command: /sp.specify Book on Physical AI & Humanoid Robotics Target audience: Students, developers, and robotics learners studying Physical AI, ROS 2, Gazebo, NVIDIA Isaac, and Humanoid Robotics. Focus: Explaining Physical AI, embodied intelligence, ROS 2 control systems, simulation workflows, VLA models, and building an autonomous humanoid robot pipeline. Success criteria: - Covers all modules: ROS 2, Gazebo, Unity, NVIDIA Isaac, VLA, Humanoid development. - Includes 3+ reproducible code examples (Python + ROS 2). - Explains humanoid control: locomotion, perception, path planning, VLA. - Reader can simulate and control a humanoid robot in a virtual environment. - All technical statements supported with reliable sources. - Book deploys cleanly on Docusaurus + GitHub Pages. Constraints: - Format: Markdown (Docusaurus-ready) - Citations: APA style, minimum 12 credible sources - No plagiarism; all diagrams/code must be original or AI-generated - Timeline: Complete within 24 hours hackathon - Chapter length: 800–1500 words each Not building: - No full hardware build guide for real humanoid robots - No advanced mechanical CAD design tutorials - No deep reinforcement learning mathematics - No detailed comparison of commercial robots or lab equipment
 labels: ["feature-spec", "humanoid-robotics"]
 links:

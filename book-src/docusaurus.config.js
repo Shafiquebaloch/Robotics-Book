@@ -41,33 +41,22 @@ const config = {
   },
 
   presets: [
-    'classic',
-    /** @type {import('@docusaurus/preset-classic').Options} */
-    ({
-      docs: {
-        sidebarPath: './sidebars.js',
-        // Please change this to your repo.
-        // Remove this to remove the "edit this page" links.
-        // editUrl: 'https://github.com/UMAIR/Robotics-Book/tree/main/', // Disabling for now, can be added later if needed
-      },
-      blog: {
-        showReadingTime: true,
-        feedOptions: {
-          type: ['rss', 'atom'],
-          xslt: true,
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          sidebarPath: './sidebars.js',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          // editUrl: 'https://github.com/UMAIR/Robotics-Book/tree/main/', // Disabling for now, can be added later if needed
         },
-        // Please change this to your repo.
-        // Remove this to remove the "edit this page" links.
-        // editUrl: 'https://github.com/UMAIR/Robotics-Book/tree/main/', // Disabling for now, can be added later if needed
-        // Useful options to enforce blogging best practices
-        onInlineTags: 'warn',
-        onInlineAuthors: 'warn',
-        onUntruncatedBlogPosts: 'warn',
-      },
-      theme: {
-        customCss: './src/css/custom.css',
-      },
-    }),
+          // {to: '/blog', label: 'Blog', position: 'left'}, // Blog might not be relevant for a book, commenting out
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      }),
+    ],
   ],
 
   themeConfig:
@@ -107,7 +96,7 @@ const config = {
             items: [
               {
                 label: 'Book', // Changed from Tutorial
-                to: '/docs/physical-ai/intro', // Linking to the first chapter
+                to: '/docs/intro', // Linking to the introduction chapter
               },
             ],
           },
@@ -150,6 +139,4 @@ const config = {
       },
     }),
 };
-};
-
 export default config;
