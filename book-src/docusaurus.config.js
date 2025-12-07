@@ -14,7 +14,7 @@ const config = {
 
   // Production URL and base path
   url: 'https://shafiquebaloch.github.io', // domain only
-  baseUrl: process.env.BASE_URL || '/Robotics-Book/', // dynamically set base URL
+  baseUrl: process.env.BASE_URL || '/', // dynamically set base URL
   organizationName: 'Shafiquebaloch',      // GitHub username
   projectName: 'Robotics-Book',            // Repo name
   trailingSlash: true,                     // fixes CSS/asset paths on Vercel
