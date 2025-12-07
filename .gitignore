@@ -1,0 +1,32 @@
+# Universal Ignores
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Node.js / Docusaurus
+node_modules/
+build/
+dist/
+*.log
+.env*
+.docusaurus/
+.cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+*.egg-info/
+*.log
+
+# Operating System Files
+.DS_Store
+.Trash
+ehthumbs.db
+Icon?
+Thumbs.db
